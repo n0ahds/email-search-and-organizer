@@ -9,7 +9,8 @@ import os
 from pathlib import Path
 import json
 
-import foldered_tuples as ft
+import folder_tuples as ft
+import label_tuples as lt
 
 try:
     # Set path for environment variable

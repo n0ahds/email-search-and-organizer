@@ -130,5 +130,5 @@ dmypy.json
 
 # Ignore project files
 *.json
-foldered_tuples.py
+email_lists/
 data_output/
