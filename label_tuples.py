@@ -10,3 +10,7 @@ banking = (
 cloud = (
     'cloud@email.com',
 ) + tuple(get_email_list('cloud.txt'))
+
+development = (
+    'development@email.com',
+) + tuple(get_email_list('development.txt'))

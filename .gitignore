@@ -127,8 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# Ignore project files
-*.json
-email_lists/
-data_output/

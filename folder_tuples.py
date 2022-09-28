@@ -7,10 +7,6 @@ business = (
     'business@email.com',
 ) + tuple(get_email_list('business.txt'))
 
-development = (
-    'development@email.com',
-) + tuple(get_email_list('development.txt'))
-
 entertainment = (
     'entertainment@email.com',
 ) + tuple(get_email_list('entertainment.txt'))

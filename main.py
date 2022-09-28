@@ -1,5 +1,5 @@
 try:
-    import win32com.client
+    import win32com.clients
     from dotenv import load_dotenv
 except:
     print('Could not import some pywin32.')
@@ -126,38 +126,37 @@ def sort_mail_into_folders(json_data):
     for i in json_data:
         if i['Sender'].endswith(ft.my_emails):
             sent_data.append(i)
-            continue
         # If the sender's email includes:
-        if i['Sender'].endswith(ft.gaming):
-            gaming_data.append(i)
-        elif i['Sender'].endswith(ft.finance):
-            finance_data.append(i)
+        elif i['Sender'].endswith(ft.business):
+            business_data.append(i)
+        elif i['Sender'].endswith(lt.cloud):
+            cloud_data.append(i)
+        elif i['Sender'].endswith(lt.development):
+            development_data.append(i)
         elif i['Sender'].endswith(ft.entertainment):
             entertainment_data.append(i)
+        elif i['Sender'].endswith(ft.finance):
+            finance_data.append(i)
+        elif i['Sender'].endswith(ft.friends_family):
+            friends_family_data.append(i)
+        elif i['Sender'].endswith(ft.gaming):
+            gaming_data.append(i)
+        elif i['Sender'].endswith(ft.government):
+            government_data.append(i)
+        elif i['Sender'].endswith(ft.health):
+            health_data.append(i)
+        elif i['Sender'].endswith(ft.learning):
+            learning_data.append(i)
+        elif i['Sender'].endswith(ft.product):
+            product_data.append(i)
+        elif i['Sender'].endswith(ft.provider):
+            provider_data.append(i)
+        elif i['Sender'].endswith(ft.service):
+            service_data.append(i)
         elif i['Sender'].endswith(ft.shopping):
             shopping_data.append(i)
         elif i['Sender'].endswith(ft.social):
             social_data.append(i)
-        elif i['Sender'].endswith(ft.government):
-            government_data.append(i)
-        elif i['Sender'].endswith(ft.cloud):
-            cloud_data.append(i)
-        elif i['Sender'].endswith(ft.health):
-            health_data.append(i)
-        elif i['Sender'].endswith(ft.development):
-            development_data.append(i)
-        elif i['Sender'].endswith(ft.friends_family):
-            friends_family_data.append(i)
-        elif i['Sender'].endswith(ft.learning):
-            learning_data.append(i)
-        elif i['Sender'].endswith(ft.service):
-            service_data.append(i)
-        elif i['Sender'].endswith(ft.product):
-            product_data.append(i)
-        elif i['Sender'].endswith(ft.business):
-            business_data.append(i)
-        elif i['Sender'].endswith(ft.provider):
-            provider_data.append(i)
         else:
             unsorted_data.append(i)
 
