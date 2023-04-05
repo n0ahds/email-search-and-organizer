@@ -1,3 +1,0 @@
-service@example.com
-@github.com
-@accountprotection.microsoft.com
